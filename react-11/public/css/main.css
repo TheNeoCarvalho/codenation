@@ -1,0 +1,141 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+}
+header {
+	background: url('../img/capa-madmax2.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: calc(100vh - 50px);
+	display: flex;
+	flex-direction: column;
+}
+
+header nav {
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+header nav ul {
+	list-style: none;
+	width: 500px;
+}
+
+header nav ul li{
+	display: inline-block;
+	padding: 0 25px;
+}
+
+header nav ul li a{
+	font-family: Montserrat;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: ease 0.2s;
+}
+
+header nav ul li a:hover{
+	color: rgb(223, 202, 42);
+}
+
+header nav .user {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header nav .user img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+header nav .user label {
+	color: #fff;
+	font-family: Montserrat;
+	font-weight: 700;
+	margin-left: 15px
+}
+
+header .title {
+	padding-top: 8%;
+	width: 85%;
+	height: 80%;
+	text-align: left;
+	margin: 0 auto;
+}
+
+header .title h1 {
+	width: 85%;
+	font: 75px Montserrat;
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+header .title ol {
+	margin-top: -25px;
+	list-style: none;
+}
+
+header .title ol li {
+	display: inline;
+}
+
+header .title ol li a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-right: 10px;
+}
+
+header .title ol li a:hover{
+	color: rgb(223, 202, 42);
+}
+
+header .title button {
+	border: none;
+	outline: none;
+	position: relative;
+	background: rgb(250, 225, 30);
+	font: 18px Montserrat;
+	padding: 20px 70px;
+	border-radius: 50px;
+	transition: ease 0.5s;
+	margin-bottom: 10px;
+}
+
+header .title button:hover {
+	background:rgb(223, 202, 42);
+}
+
+header .title button i{
+	font-size: 28px;
+	position: absolute;
+	right: 10px;
+	top: 17px;
+}
+
+header .title label, span {
+	display: block;
+	margin-top: 15px;
+}
+
+header .title label {
+	color: #fff;
+	font: 22px Montserrat;
+	font-weight: 100;
+}
+
+header .title span {
+	color:rgb(223, 202, 42);
+	font: 18px Montserrat;
+	font-weight: 100;
+}
+
