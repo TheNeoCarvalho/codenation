@@ -5,12 +5,17 @@
 	box-sizing: border-box;
 	padding: 0;
 }
+
+body {
+	background-color: #f2f2f2;
+}
+
 header {
 	background: url('../img/capa-madmax2.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
-	height: calc(100vh - 50px);
+	height: 90vh;
 	display: flex;
 	flex-direction: column;
 }
@@ -37,7 +42,7 @@ header nav ul li a{
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: ease 0.2s;
+	transition: all 0.5s;
 }
 
 header nav ul li a:hover{
@@ -64,7 +69,7 @@ header nav .user label {
 }
 
 header .title {
-	padding-top: 8%;
+	padding-top: 5%;
 	width: 85%;
 	height: 80%;
 	text-align: left;
@@ -80,7 +85,7 @@ header .title h1 {
 }
 
 header .title ol {
-	margin-top: -25px;
+	margin-top: -35px;
 	list-style: none;
 }
 
@@ -93,6 +98,7 @@ header .title ol li a{
 	text-transform: uppercase;
 	text-decoration: none;
 	padding-right: 10px;
+	transition: all 0.5s;
 }
 
 header .title ol li a:hover{
@@ -107,7 +113,7 @@ header .title button {
 	font: 18px Montserrat;
 	padding: 20px 70px;
 	border-radius: 50px;
-	transition: ease 0.5s;
+	transition: all 0.5s;
 	margin-bottom: 10px;
 }
 
@@ -138,4 +144,230 @@ header .title span {
 	font: 18px Montserrat;
 	font-weight: 100;
 }
+
+.content {
+	margin: 0 auto;
+	position: relative;
+	width: 85%;
+}
+
+.content nav {
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.content nav ol {
+	list-style: none;
+	border-bottom: 2px solid #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content nav ol li{
+	display: inline;
+	padding: 10px 0 20px 0;
+	transition: all 0.2s;
+	margin: 0 20px;
+}
+
+.content nav ol li a {
+	text-align: center;
+	cursor: pointer;
+	font: 1em Montserrat;
+	text-transform: uppercase;
+	color: #e4bb23;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.content nav ol li:hover {
+	border-bottom: 2px solid rgb(223, 202, 42);
+}
+
+
+.content .cards {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px 0;
+	width: 100%;
+}
+
+.content .cards .card {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: relative;
+	width: 23%;
+	height: 455px;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 3px rgba(0,0,0,0.5);
+	margin: 10px 10px;
+}
+
+.content .cards .card .capa {
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+}
+.content .cards .card .capa img {
+	width: 100%;
+	height: 350px;
+}
+
+.content .cards .card .capa .play{
+	width: 100%;
+	height: 98%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s;
+	z-index: 99;
+}
+
+.content .cards .card:hover .play {
+	visibility: visible;
+	opacity: 1;
+	color: #e4bb23;
+}
+
+.content .cards .card .capa .play h3,
+.content .cards .card .capa .play a {
+	margin: 0 auto;
+}
+
+.content .cards .card .capa .play h3{
+	color: #fff;
+	font: 1.5em Montserrat;
+	font-weight: 700;
+	color: #e4bb23;
+	text-transform: uppercase;
+}
+
+.content .cards .card .capa .play i{
+	color: #fff;
+	font-size: 3em;
+}
+
+.content .cards .info {
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+}
+
+.content .cards .card .info .title {
+	font: 1em Montserrat;
+	color: #000;
+	font-weight: bold;
+	margin: 5px;
+	padding: 0 10px;
+}
+
+.content .cards .card .info .genero {
+	color: #e4bb23;
+	font: 0.8em Montserrat;
+	font-weight: 300;
+	padding: 0 15px;
+}
+
+.content .cards .card .info .genero a {
+	color: #e4bb23;
+	text-decoration: none;
+}
+
+.content .cards .card .info .nota {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px 10px;
+	margin-top: -5px
+}
+
+
+
+.content .cards .card .info .nota span {
+	margin-top: -5px;
+	margin-right: -25px;
+	font: 1.3em Montserrat;
+	color: #000;
+	font-weight: bold;
+	position: absolute;
+	right: 35px;
+	bottom: 10px
+}
+
+.content .cards .card .nota i{
+	font-size: 1.3em;
+	font-weight: bold;
+	color:#bbb;
+	position: absolute;
+	left: 15px;
+	bottom: 10px;
+}
+
+.content .cards .nota i:hover{
+	color: #e4bb23;
+}
+
+.rodape {
+	height: 90px;
+	color: #bababa;
+	background-color: #fff;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rodape .content {
+	width: 85%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rodape .content img {
+	width: 100px;
+	height: 50px;
+}
+
+.rodape .content .social {
+	list-style: none;
+	display: flex;
+}
+
+.rodape .content .social li {
+	padding: 0 15px;
+}
+
+.rodape .content .social li a {
+	color:#bbb;
+	font-size: 1.5em;
+	transition: all 0.5s;
+} 
+
+.rodape .content .social li a:hover .fa-twitter {
+	color: #55acee
+}
+
+.rodape .content .social li a:hover .fa-facebook-official {
+	color: #3b5998
+}
+
+.rodape .content .social li a:hover .fa-instagram {
+	color: #e95950
+}
+
+
+
 
